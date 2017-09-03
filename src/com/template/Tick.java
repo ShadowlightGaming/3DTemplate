@@ -28,6 +28,7 @@ public class Tick extends Game{
 		if (Keyboard.isKeyDown(Keyboard.KEY_DOWN)) {
 			box.setY(box.getY() - 1);
 		}
+		
 		while (Keyboard.next()) {
 			//Exit game when esc is pressed
 			if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
