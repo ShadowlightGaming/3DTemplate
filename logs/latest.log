@@ -1,20 +1,241 @@
-[14:37:35] Main: Configuration loaded
-[14:37:35] Main: Help command added
-[14:37:35] Main: Commands loaded
-[14:37:38] Game: 116
-[14:37:39] Game: 120
-[14:37:40] Game: 120
-[14:37:41] Game: 120
-[14:37:42] Game: 120
-[14:37:43] Game: 120
-[14:37:44] Game: 120
-[14:37:45] Game: 120
-[14:37:46] Game: 120
-[14:37:47] Game: 120
-[14:37:48] Game: 120
-[14:37:49] Game: 120
-[14:37:50] Game: 120
-[14:37:51] Game: 120
-[14:37:52] Game: 120
-[14:37:52] handlers.EventHandler: Shutting down
-[14:37:52] util.Log: Deleted 3.9.2017_14.36.22.log
+[17:49:42] Main: Configuration loaded
+[17:49:42] Main: Help command added
+[17:49:42] Main: Commands loaded
+[17:49:45] handlers.TextureHandler: [Ljava.lang.String;@3d82c5f3
+[17:49:46] Game: 115
+[17:49:47] Game: 120
+[17:49:47] Tick: State changed to MAIN_MENU
+[17:49:48] Game: 120
+[17:49:49] Game: 120
+[17:49:49] Tick: State changed to GAME
+[17:49:49] Tick: State changed to INTRO
+[17:49:50] Game: 120
+[17:49:51] Game: 120
+[17:49:52] Game: 120
+[17:49:52] Tick: State changed to MAIN_MENU
+[17:49:53] Game: 117
+[17:49:53] Tick: State changed to GAME
+[17:49:54] Game: 120
+[17:49:54] Tick: State changed to INTRO
+[17:49:54] Tick: State changed to MAIN_MENU
+[17:49:54] Tick: State changed to GAME
+[17:49:55] Game: 120
+[17:49:55] Tick: State changed to INTRO
+[17:49:56] Game: 120
+[17:49:57] Game: 120
+[17:49:58] Game: 120
+[17:49:59] Game: 120
+[17:49:59] Tick: State changed to MAIN_MENU
+[17:49:59] Tick: State changed to GAME
+[17:50:0] Game: 120
+[17:50:0] Tick: State changed to INTRO
+[17:50:0] Tick: State changed to MAIN_MENU
+[17:50:0] Tick: State changed to GAME
+[17:50:1] Game: 92
+[17:50:2] Game: 120
+[17:50:2] Tick: State changed to INTRO
+[17:50:2] Tick: State changed to MAIN_MENU
+[17:50:2] Tick: State changed to GAME
+[17:50:2] Tick: State changed to INTRO
+[17:50:2] Tick: State changed to MAIN_MENU
+[17:50:2] Tick: State changed to GAME
+[17:50:3] Game: 101
+[17:50:3] Tick: State changed to INTRO
+[17:50:3] Tick: State changed to MAIN_MENU
+[17:50:3] Tick: State changed to GAME
+[17:50:3] Tick: State changed to INTRO
+[17:50:3] Tick: State changed to MAIN_MENU
+[17:50:3] Tick: State changed to GAME
+[17:50:3] Tick: State changed to INTRO
+[17:50:3] Tick: State changed to MAIN_MENU
+[17:50:3] Tick: State changed to GAME
+[17:50:3] Tick: State changed to INTRO
+[17:50:3] Tick: State changed to MAIN_MENU
+[17:50:3] Tick: State changed to GAME
+[17:50:3] Tick: State changed to INTRO
+[17:50:3] Tick: State changed to MAIN_MENU
+[17:50:4] Tick: State changed to GAME
+[17:50:4] Game: 118
+[17:50:4] Tick: State changed to INTRO
+[17:50:4] Tick: State changed to MAIN_MENU
+[17:50:4] Tick: State changed to GAME
+[17:50:4] Tick: State changed to INTRO
+[17:50:4] Tick: State changed to MAIN_MENU
+[17:50:4] Tick: State changed to GAME
+[17:50:4] Tick: State changed to INTRO
+[17:50:4] Tick: State changed to MAIN_MENU
+[17:50:4] Tick: State changed to GAME
+[17:50:4] Tick: State changed to INTRO
+[17:50:4] Tick: State changed to MAIN_MENU
+[17:50:4] Tick: State changed to GAME
+[17:50:4] Tick: State changed to INTRO
+[17:50:4] Tick: State changed to MAIN_MENU
+[17:50:5] Tick: State changed to GAME
+[17:50:5] Tick: State changed to INTRO
+[17:50:5] Game: 116
+[17:50:5] Tick: State changed to MAIN_MENU
+[17:50:5] Tick: State changed to GAME
+[17:50:5] Tick: State changed to INTRO
+[17:50:5] Tick: State changed to MAIN_MENU
+[17:50:5] Tick: State changed to GAME
+[17:50:5] Tick: State changed to INTRO
+[17:50:5] Tick: State changed to MAIN_MENU
+[17:50:5] Tick: State changed to GAME
+[17:50:5] Tick: State changed to INTRO
+[17:50:5] Tick: State changed to MAIN_MENU
+[17:50:5] Tick: State changed to GAME
+[17:50:5] Tick: State changed to INTRO
+[17:50:5] Tick: State changed to MAIN_MENU
+[17:50:5] Tick: State changed to GAME
+[17:50:5] Tick: State changed to INTRO
+[17:50:6] Tick: State changed to MAIN_MENU
+[17:50:6] Game: 110
+[17:50:6] Tick: State changed to GAME
+[17:50:6] Tick: State changed to INTRO
+[17:50:6] Tick: State changed to MAIN_MENU
+[17:50:6] Tick: State changed to GAME
+[17:50:6] Tick: State changed to INTRO
+[17:50:6] Tick: State changed to MAIN_MENU
+[17:50:6] Tick: State changed to GAME
+[17:50:6] Tick: State changed to INTRO
+[17:50:6] Tick: State changed to MAIN_MENU
+[17:50:6] Tick: State changed to GAME
+[17:50:6] Tick: State changed to INTRO
+[17:50:6] Tick: State changed to MAIN_MENU
+[17:50:6] Tick: State changed to GAME
+[17:50:6] Tick: State changed to INTRO
+[17:50:6] Tick: State changed to MAIN_MENU
+[17:50:7] Tick: State changed to GAME
+[17:50:7] Game: 120
+[17:50:7] Tick: State changed to INTRO
+[17:50:7] Tick: State changed to MAIN_MENU
+[17:50:7] Tick: State changed to GAME
+[17:50:7] Tick: State changed to INTRO
+[17:50:7] Tick: State changed to MAIN_MENU
+[17:50:7] Tick: State changed to GAME
+[17:50:7] Tick: State changed to INTRO
+[17:50:7] Tick: State changed to MAIN_MENU
+[17:50:7] Tick: State changed to GAME
+[17:50:7] Tick: State changed to INTRO
+[17:50:8] Game: 111
+[17:50:8] Tick: State changed to MAIN_MENU
+[17:50:9] Game: 120
+[17:50:9] Tick: State changed to GAME
+[17:50:9] Tick: State changed to INTRO
+[17:50:9] Tick: State changed to MAIN_MENU
+[17:50:10] Game: 120
+[17:50:10] Tick: State changed to GAME
+[17:50:10] Tick: State changed to INTRO
+[17:50:10] Tick: State changed to MAIN_MENU
+[17:50:10] Tick: State changed to GAME
+[17:50:11] Game: 120
+[17:50:11] Tick: State changed to INTRO
+[17:50:11] Tick: State changed to MAIN_MENU
+[17:50:11] Tick: State changed to GAME
+[17:50:11] Tick: State changed to INTRO
+[17:50:11] Tick: State changed to MAIN_MENU
+[17:50:11] Tick: State changed to GAME
+[17:50:11] Tick: State changed to INTRO
+[17:50:12] Game: 120
+[17:50:12] Tick: State changed to MAIN_MENU
+[17:50:12] Tick: State changed to GAME
+[17:50:12] Tick: State changed to INTRO
+[17:50:12] Tick: State changed to MAIN_MENU
+[17:50:12] Tick: State changed to GAME
+[17:50:12] Tick: State changed to INTRO
+[17:50:13] Game: 120
+[17:50:13] Tick: State changed to MAIN_MENU
+[17:50:13] Tick: State changed to GAME
+[17:50:13] Tick: State changed to INTRO
+[17:50:13] Tick: State changed to MAIN_MENU
+[17:50:13] Tick: State changed to GAME
+[17:50:14] Game: 110
+[17:50:14] Tick: State changed to INTRO
+[17:50:14] Tick: State changed to MAIN_MENU
+[17:50:14] Tick: State changed to GAME
+[17:50:15] Game: 120
+[17:50:15] Tick: State changed to INTRO
+[17:50:15] Tick: State changed to MAIN_MENU
+[17:50:15] Tick: State changed to GAME
+[17:50:15] Tick: State changed to INTRO
+[17:50:16] Tick: State changed to MAIN_MENU
+[17:50:16] Game: 120
+[17:50:16] Tick: State changed to GAME
+[17:50:16] Tick: State changed to INTRO
+[17:50:16] Tick: State changed to MAIN_MENU
+[17:50:17] Game: 120
+[17:50:17] Tick: State changed to GAME
+[17:50:17] Tick: State changed to INTRO
+[17:50:17] Tick: State changed to MAIN_MENU
+[17:50:17] Tick: State changed to GAME
+[17:50:18] Game: 120
+[17:50:18] Tick: State changed to INTRO
+[17:50:18] Tick: State changed to MAIN_MENU
+[17:50:18] Tick: State changed to GAME
+[17:50:19] Tick: State changed to INTRO
+[17:50:19] Game: 120
+[17:50:19] Tick: State changed to MAIN_MENU
+[17:50:19] Tick: State changed to GAME
+[17:50:19] Tick: State changed to INTRO
+[17:50:19] Tick: State changed to MAIN_MENU
+[17:50:20] Game: 120
+[17:50:20] Tick: State changed to GAME
+[17:50:20] Tick: State changed to INTRO
+[17:50:20] Tick: State changed to MAIN_MENU
+[17:50:20] Tick: State changed to GAME
+[17:50:20] Tick: State changed to INTRO
+[17:50:21] Game: 117
+[17:50:21] Tick: State changed to MAIN_MENU
+[17:50:21] Tick: State changed to GAME
+[17:50:21] Tick: State changed to INTRO
+[17:50:22] Tick: State changed to MAIN_MENU
+[17:50:22] Game: 120
+[17:50:22] Tick: State changed to GAME
+[17:50:22] Tick: State changed to INTRO
+[17:50:22] Tick: State changed to MAIN_MENU
+[17:50:23] Game: 120
+[17:50:23] Tick: State changed to GAME
+[17:50:23] Tick: State changed to INTRO
+[17:50:23] Tick: State changed to MAIN_MENU
+[17:50:23] Tick: State changed to GAME
+[17:50:24] Game: 120
+[17:50:24] Tick: State changed to INTRO
+[17:50:24] Tick: State changed to MAIN_MENU
+[17:50:24] Tick: State changed to GAME
+[17:50:25] Game: 120
+[17:50:25] Tick: State changed to INTRO
+[17:50:25] Tick: State changed to MAIN_MENU
+[17:50:25] Tick: State changed to GAME
+[17:50:25] Tick: State changed to INTRO
+[17:50:25] Tick: State changed to MAIN_MENU
+[17:50:26] Game: 120
+[17:50:26] Tick: State changed to GAME
+[17:50:26] Tick: State changed to INTRO
+[17:50:26] Tick: State changed to MAIN_MENU
+[17:50:26] Tick: State changed to GAME
+[17:50:27] Tick: State changed to INTRO
+[17:50:27] Game: 120
+[17:50:27] Tick: State changed to MAIN_MENU
+[17:50:27] Tick: State changed to GAME
+[17:50:27] Tick: State changed to INTRO
+[17:50:28] Game: 120
+[17:50:28] Tick: State changed to MAIN_MENU
+[17:50:28] Tick: State changed to GAME
+[17:50:28] Tick: State changed to INTRO
+[17:50:28] Tick: State changed to MAIN_MENU
+[17:50:29] Game: 120
+[17:50:29] Tick: State changed to GAME
+[17:50:29] Tick: State changed to INTRO
+[17:50:29] Tick: State changed to MAIN_MENU
+[17:50:29] Tick: State changed to GAME
+[17:50:29] Tick: State changed to INTRO
+[17:50:30] Tick: State changed to MAIN_MENU
+[17:50:30] Game: 120
+[17:50:30] Tick: State changed to GAME
+[17:50:30] Tick: State changed to INTRO
+[17:50:30] Tick: State changed to MAIN_MENU
+[17:50:30] Tick: State changed to GAME
+[17:50:30] Tick: State changed to INTRO
+[17:50:31] Game: 120
+[17:50:31] handlers.EventHandler: Shutting down
+[17:50:31] util.Log: Deleted 3.9.2017_17.48.7.log

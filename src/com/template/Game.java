@@ -1,34 +1,46 @@
 package com.template;
 
-import static org.lwjgl.opengl.GL11.*;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import static org.lwjgl.opengl.GL11.GL_MODELVIEW;
+import static org.lwjgl.opengl.GL11.GL_PROJECTION;
+import static org.lwjgl.opengl.GL11.GL_TEXTURE_2D;
+import static org.lwjgl.opengl.GL11.glEnable;
+import static org.lwjgl.opengl.GL11.glLoadIdentity;
+import static org.lwjgl.opengl.GL11.glMatrixMode;
+import static org.lwjgl.opengl.GL11.glOrtho;
 
 import org.lwjgl.LWJGLException;
 import org.lwjgl.Sys;
 import org.lwjgl.opengl.Display;
 import org.newdawn.slick.opengl.Texture;
-import org.newdawn.slick.opengl.TextureLoader;
 
+import com.template.entities.Box2D;
+import com.template.entities.Entity.Entity2D;
 import com.template.handlers.EventHandler;
+import com.template.handlers.TextureHandler;
 import com.template.util.Log;
 
 public class Game {	
 	public static boolean running = true;
+	//Game states
 	public enum State {INTRO, GAME, MAIN_MENU};
 	public static State state = State.INTRO;
 	
-	public static int WIDTH = 1920;
-	public static int HEIGHT = 1080;
+	//Window width  height
+	public static int WIDTH;
+	public static int HEIGHT;
 	
+	//Frames per second
 	public static int fps;
 	
-	public static Texture texture = null;
+	//Textures
+	public static Texture texClouds;
+	public static Texture texFractal;
 	
-	public void init() {
+	//Entities
+	static Entity2D box = new Box2D(960, 540, 750);
+	
+	//Initialization
+	public static void init() {
 		try {
 			//Set program to run in fullscreen mode
 			Display.setFullscreen(true);
@@ -61,20 +73,17 @@ public class Game {
 		 * Ex: 16x16; 16384x8192. Any multiple of 2 to 1 (1:1, 2:1, 4:1, 8:1, 16:1, 32:1, 64:1, 128:1, 256:1, 512:1, ect).
 		 */
 		
-		//Path the texutre
-		try {
-			texture = TextureLoader.getTexture("PNG",  new FileInputStream(new File("resources/textures/Clouds.png")));
-		} catch (FileNotFoundException e) {
-			Log.error(e);
-		} catch (IOException e) {
-			Log.error(e);
-		}
+		//Path the texutres
+		TextureHandler.init();
 		
-		//Enable the texture
+		//Enable the textures
 		glEnable(GL_TEXTURE_2D);
+		
+		//Initialize entities
+		box.create();
 	}
 	
-	public void run() {
+	public static void run() {
 		long timer = Sys.getTime();
 		int fpsCount = 0;
 		while(running) {
@@ -97,5 +106,10 @@ public class Game {
 			}
 			fpsCount++;
 		}
+		
+		//Destory Entities
+		box.destroy();
+		//Shutdown
+		EventHandler.shutdown();
 	}
 }

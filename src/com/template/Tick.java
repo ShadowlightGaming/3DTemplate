@@ -2,7 +2,6 @@ package com.template;
 
 import org.lwjgl.input.Keyboard;
 
-import com.template.handlers.EventHandler;
 import com.template.util.Log;
 
 public class Tick extends Game{
@@ -18,29 +17,32 @@ public class Tick extends Game{
 	public static void inputTick() {
 		//Move screen via arrow keys
 		if (Keyboard.isKeyDown(Keyboard.KEY_LEFT)) {
-			Render.xOffset++;
+			box.setX(box.getX() + 1);
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_RIGHT)) {
-			Render.xOffset--;
+			box.setX(box.getX() - 1);
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_UP)) {
-			Render.yOffset++;
+			box.setY(box.getY() + 1);
 		}
 		if (Keyboard.isKeyDown(Keyboard.KEY_DOWN)) {
-			Render.yOffset--;
+			box.setY(box.getY() - 1);
 		}
 		while (Keyboard.next()) {
 			//Exit game when esc is pressed
 			if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
-				EventHandler.shutdown();
+				running = false;
 			}
+			//Change Game state when space is pressed
 			if(Keyboard.isKeyDown(Keyboard.KEY_SPACE)) {
-				if(state == State.INTRO)
+				if(state == State.INTRO){
 					state = State.MAIN_MENU;
-				else if(state == State.MAIN_MENU)
+				} else if(state == State.MAIN_MENU) {
 					state = State.GAME;
-				else if(state == State.GAME)
+				} else if(state == State.GAME){
 					state = State.INTRO;
+				}
+				Log.out("State changed to " + state);
 			}
 		}
 	}

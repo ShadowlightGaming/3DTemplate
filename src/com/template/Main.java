@@ -5,7 +5,6 @@ import com.template.util.Config;
 import com.template.util.Log;
 
 public class Main {
-	static Game game = new Game();
 		
 	public static void main(String[] args) {
 		//Reset Latest Log
@@ -16,9 +15,9 @@ public class Main {
 		addCommands();
 
 		//Initialize game
-		game.init();
+		Game.init();
 		//Run game loop
-		game.run();
+		Game.run();
 	}
 	
 	public static void addCommands() {
