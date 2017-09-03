@@ -1,7 +1,6 @@
 package com.template;
 
 import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.opengl.GL12.*;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,19 +8,23 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.lwjgl.LWJGLException;
+import org.lwjgl.Sys;
 import org.lwjgl.opengl.Display;
 import org.newdawn.slick.opengl.Texture;
 import org.newdawn.slick.opengl.TextureLoader;
-import org.newdawn.slick.util.ResourceLoader;
 
 import com.template.handlers.EventHandler;
 import com.template.util.Log;
 
 public class Game {	
 	public static boolean running = true;
+	public enum State {INTRO, GAME, MAIN_MENU};
+	public static State state = State.INTRO;
 	
 	public static int WIDTH = 1920;
 	public static int HEIGHT = 1080;
+	
+	public static int fps;
 	
 	public static Texture texture = null;
 	
@@ -49,7 +52,7 @@ public class Game {
 		//Reset previous projection martices
 		glLoadIdentity();
 		//Set Ortho
-		glOrtho(0, 16, 9, 0, 1, -1);
+		glOrtho(0, WIDTH, HEIGHT, 0, 1, -1);
 		//Set matrix mode
 		glMatrixMode(GL_MODELVIEW);
 		
@@ -72,11 +75,27 @@ public class Game {
 	}
 	
 	public void run() {
+		long timer = Sys.getTime();
+		int fpsCount = 0;
 		while(running) {
+			//Update Display
+			Display.update();
+			//Limit fps to 120
+			Display.sync(120);
+			
 			//Render display
 			Render.render();
 			//Game input tick
 			Tick.inputTick();
+			
+			//Calculate fps
+			if(Sys.getTime() >= timer + 1000) {
+				fps = fpsCount;
+				fpsCount = 0;
+				timer = Sys.getTime();
+				Log.out(fps + "");
+			}
+			fpsCount++;
 		}
 	}
 }

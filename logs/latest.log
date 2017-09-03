@@ -1,5 +1,20 @@
-[23:24:33] Main: Configuration loaded
-[23:24:33] Main: Help command added
-[23:24:33] Main: Commands loaded
-[23:24:33] handlers.EventHandler: Shutting down
-[23:24:33] util.Log: Deleted 2.9.2017_23.24.33.log
+[14:37:35] Main: Configuration loaded
+[14:37:35] Main: Help command added
+[14:37:35] Main: Commands loaded
+[14:37:38] Game: 116
+[14:37:39] Game: 120
+[14:37:40] Game: 120
+[14:37:41] Game: 120
+[14:37:42] Game: 120
+[14:37:43] Game: 120
+[14:37:44] Game: 120
+[14:37:45] Game: 120
+[14:37:46] Game: 120
+[14:37:47] Game: 120
+[14:37:48] Game: 120
+[14:37:49] Game: 120
+[14:37:50] Game: 120
+[14:37:51] Game: 120
+[14:37:52] Game: 120
+[14:37:52] handlers.EventHandler: Shutting down
+[14:37:52] util.Log: Deleted 3.9.2017_14.36.22.log

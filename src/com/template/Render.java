@@ -2,20 +2,28 @@ package com.template;
 
 import static org.lwjgl.opengl.GL11.*;
 
-import org.lwjgl.opengl.Display;
-
 public class Render extends Game {
 	
 	public static float xOffset;
 	public static float yOffset;
 	
 	public static void render() {
-		Display.update();
-		Display.sync(120);
-		
 		//Clear previous display
 		glClear(GL_COLOR_BUFFER_BIT);
-		
+		switch (state) {
+		case INTRO:
+			glColor3f(1.0f, 0.0f, 0.0f);
+			glRectf(0, 0, WIDTH, HEIGHT);
+			break;
+		case GAME:
+			glColor3f(0.0f, 1.0f, 0.0f);
+			glRectf(0, 0, WIDTH, HEIGHT);
+			break;
+		case MAIN_MENU:
+			glColor3f(0.0f, 0.0f, 1.0f);
+			glRectf(0, 0, WIDTH, HEIGHT);
+			break;
+		}/**
 		//Bind texture
 		texture.bind();
 		
@@ -26,9 +34,9 @@ public class Render extends Game {
 		glTexCoord2f(1, 0);
 		glVertex2f(16.0F + xOffset, 0.0F + yOffset);
 		glTexCoord2f(1, 1);
-		glVertex2f(16.0F + xOffset, 19.0F + yOffset);
+		glVertex2f(16.0F + xOffset, 8.0F + yOffset);
 		glTexCoord2f(0, 1);
-		glVertex2f(0.0F + xOffset, 19.0F + yOffset);
-		glEnd();
+		glVertex2f(0.0F + xOffset, 8.0F + yOffset);
+		glEnd();*/
     }
 }

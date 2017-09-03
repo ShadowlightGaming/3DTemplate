@@ -13,10 +13,10 @@ import java.util.Scanner;
 public class Log {
 	static File folder = new File("logs");
 	
-	static LocalDateTime time = LocalDateTime.now();
-	
 	//This Method logs text. Equivalent to System.out
 	public static void out(String string) {
+		//Get Current time
+		LocalDateTime time = LocalDateTime.now();
 		//Get origin of string
 		String origin = new Exception().getStackTrace()[1].getClassName().substring(13);
 		//Set string to print
@@ -33,6 +33,8 @@ public class Log {
 	
 	//This Method logs errors. Equivalent to System.err
 	public static void error(Exception e) {
+		//Get Current time
+		LocalDateTime time = LocalDateTime.now();
 		//Get origin of string
 		String origin = new Exception().getStackTrace()[1].getClassName().substring(13);
 		//Set string to print		
@@ -50,6 +52,8 @@ public class Log {
 	
 	//This Method is made to print problems that don't have errors attached to them
 	public static void warning(String string) {
+		//Get Current time
+		LocalDateTime time = LocalDateTime.now();
 		//Get origin of string
 		String origin = new Exception().getStackTrace()[1].getClassName().substring(13);
 		//Set string to print		
@@ -66,6 +70,8 @@ public class Log {
 	
 	//This Method dumps the text from latest.log to a time-stamped log file
 	public static void dump() {
+		//Get Current time
+		LocalDateTime time = LocalDateTime.now();
 		//Check if folder exists
 		if(!folder.exists()) {
 			//If folder doesn't exist, create it
